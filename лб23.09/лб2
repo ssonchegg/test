@@ -1,0 +1,208 @@
+###1###
+x=int(input())
+y=int(input())
+if x < 4:
+  print("Первая область")
+else:
+  print("Вторая область")
+  
+  ###2###
+  x=int(input())
+y=int(input())
+if y > 3:
+  print("Первая область")
+else:
+  print("Вторая область")
+  
+  ###3###
+  a=int(input())
+if a>2:
+  print(2)
+else:
+  print(a)
+  
+  ###4###
+  x = int(input())
+y = int(input())
+if x>y:
+  print(x)
+else:
+  print(y)
+  
+  ###5###
+  a = int(input())
+b = int(input())
+if a != b:
+    if a > b:
+        print('1е максимальное, 2е минимальное')
+    else:
+        print('2е максимальное, а 1е минимальное')
+else:
+    print('Числа равны')
+    
+    ###6###
+    a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+e = int()
+if  b == d:
+  e += 1
+else:
+  e -= 0
+print((c-a)+e)
+
+###7###
+from math import sin
+x = int(input())
+if x>0:
+  print(sin(x)**2)
+else:
+  print(1-2*sin(x**2))
+  
+  ###8###
+  from math import sin
+x = int(input())
+if x>0:
+  print(sin(x**2))
+else:
+  print(1+2*sin(x)**2)
+  
+  ###9###
+  b = int(input())
+a = int(input())
+if b % a == 0:
+    print ("да")
+else:
+    print ("нет")
+    
+    ###10###
+    a=int(input())
+if (a%2)<=0:
+  if  a % 10 ==7:
+    print("Четное оканчивается на 7")
+  else:
+    print("Четное не оканчивается на 7")
+else:
+  if  a % 10 ==7:
+    print('Не является четным и оканчивается на 7')
+  else:
+    print('Не является четным и не оканчивается на 7')
+    
+    ###11###
+    a=int(input())
+b = (a//10)%10
+c = a%10
+if b!=c:
+  if b>c:
+    print(b,'>', c)
+  else:
+    print(b,'<', c)
+else:
+  print('Числы равны')
+  
+  ###12###
+  а = целое (ввод ())
+б=а//100%10
+с=а%10
+если б==с:
+  print('Палиндром')
+еще:
+  print('Не палиндром')
+  
+  ###13###
+  а = целое (ввод ())
+б=а//100%10
+с=а//10%10
+д=а%10
+если b==c и c==d и d==b:
+  print('Все платежи получены')
+еще:
+  print('Цифры разные')
+  
+  ###14###
+  а = целое (ввод ())
+д=а%10
+если д//2!=0:
+  print('Последняя цифра четная')
+еще:
+  print('Последняя цифра не четная')
+  
+  ###16###
+  а = целое (ввод ())
+б=а//1000
+печать (б)
+
+###17###
+а = 543
+б = 130
+печать (а//б)
+
+###19###
+a = int(input())
+b=a//100%10
+c=a//10%10
+d=a%10
+print(d,c,b,sep='')
+
+###20###
+a = int(input())
+b=a//100%10
+c=a//10%10
+d=a%10
+print(c,d,b, sep = '')
+
+###21###
+a = int(input())
+b=a//100%10
+c=a//10%10
+d=a%10
+print(d,b,c, sep = '')
+
+###22###
+a = int(input())
+b=a//100%10
+c=a//10%10
+d=a%10
+print(c,b,d, sep = '')
+
+###23###
+a = int(input())
+b=a//100%10
+c=a//10%10
+d=a%10
+print(b,d,c, sep = '')
+
+###24###
+абв = интервал (ввод ())
+с = абс % 10
+б = (абв% 100) // 10
+а = абв // 100
+печать (а, б, в, сеп = '')
+печать (а, в, б, сеп='')
+печать (б, а, в, сеп='')
+печать (б, в, а, sep = '')
+печать (с, а, б, сеп = '')
+печать (с, б, а, сеп = '')
+
+###25###
+a=int(input())
+b = a//10%10
+c = a%10
+print(c)
+print(b)
+
+###34###
+a, b, c, d = int(input()), int(input()), int(input()), int(input())
+if a == c or b == d:
+    print('YES')
+else:
+    print('NO')
+    
+###35###
+x=int(input())
+y=int(input())
+if x >= -1 and y <= -2:
+  print("Попадает в область")
+else:
+  print("Не попадает")
