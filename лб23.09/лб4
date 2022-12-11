@@ -1,0 +1,113 @@
+###1###
+from random import randint
+ 
+print([randint(163, 190) for i in range(12)])
+0
+
+###2###
+a, p = map(int, input("a, p = ").split())
+lst = [a]
+for i in range(1, 10):
+    lst.append(a+i*p)
+print(*lst)
+
+###3###
+s = list(input())
+for i in reversed(s):
+    print(i, end='')
+    
+###4###
+a=[1,2,3,4,5,6,7,8,9]
+
+try:
+    Sum_even = 0
+    for i in range(0,len(a)+1,2):
+        Sum_even+=a[i]
+except IndexError:
+    pass
+
+try:
+    Sum_odd = 0
+    for j in range(1,len(a)+1,2):
+        Sum_odd+=a[j]
+except IndexError:
+    pass
+
+print(Sum_even - Sum_odd)
+
+###5###
+k=[10,10,20,40,35,30,10,10,20,40,35,30,10,10,20,40,35,30,10,10,20,40,35,30,10,10,20,40,35,30,10,20,40,35,30,10,10,20,40,35,30,10]
+t=str(sum(k))
+print("Общее число учеников ",t)
+if len(t)==4 :
+    print(" есть четырехзначное число")
+else :
+    print(" не является четырехзначным числом")
+    
+###6###
+а)
+print(' '.join([str(x) for x in map(int, input().split()) if x % 2 == 0]))
+
+
+б)
+def main(l):
+    print(*(i for i in l if i[-1] == '0'))
+ 
+input()
+lst = input().split()
+ 
+main(lst)
+
+###8###
+nums = [1, 2, 2, 3, 4, 5, 5, 5]
+
+count = 1
+for i in range(1, len(nums)):
+    if nums[i - 1] != nums[i]:
+        count += 1
+
+print(count)
+
+###9###
+a = [int(i) for i in input().split()]
+for i in range(1, len(a), 2):
+    a[i - 1], a[i] = a[i], a[i - 1]
+print(' '.join([str(i) for i in a]))
+
+###10###
+a = []
+n = int (input())
+for i in range(n):
+    new_element = int(input())
+    a.append(new_element)
+print(a)
+if n%2==0:
+    print(a[n/2: n]+a[0: n/2])
+else:
+    print('нет')
+    
+###12###
+import sys
+ 
+print(set(map(str.rstrip, sys.stdin)))
+
+###13###
+from functools import reduce
+ 
+a = [17,18,19]
+b = [['q', 'w', 'e'], ['r', 't'], ['z', 'x', 'c', 'v']]
+c = list( reduce(lambda x,y: x+y, b) )
+
+###14###
+grades = [5, 4, 5, 3, 2, 5, 4, 3, 5, 5, 4, 2, 2, 3]
+print(f'Средний балл: {sum(grades) / len(grades)}')
+print(*grades, sep=';')
+
+###17###
+a = [[i,10*i] for i in range(1,5)]
+print(a)
+b = sum(a,[])
+print(b)
+
+###18###
+print([i**2 if i%2 == 0 else i+2 for i in range(1,21)])
